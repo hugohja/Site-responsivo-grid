@@ -1,0 +1,140 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+/*Cabeçalho*/
+header{
+    padding: 16px 0;
+    background-color: rgb(12, 47, 112);
+    color: white;
+}
+header nav li{
+    display: inline;
+    margin-left: 16px;
+    font-size: 24px;
+}
+header nav li a{
+    color: white;
+    text-decoration: none;
+}
+header .container, 
+section .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.container,
+.produtos{
+    max-width: 1280px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+/*sobre*/
+section {
+    padding: 50px 0;
+}
+section .container{
+    align-items: flex-start;
+}
+section h2{
+    margin-bottom: 16px;
+    color: blue;
+}
+section .text p{
+    border-top: 3px solid blue;
+    padding-top: 20px;
+    text-align: justify;
+}
+section img{
+    margin-right: 32px;
+}
+
+/*produtos*/
+section .container .produto .nomeProduto{
+    font-weight:bolder;
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+section .container .produto .descricaoProduto{
+    font-size: 12px;
+    margin-bottom: 10px;
+    text-align: justify;
+}
+section .container .produto button{
+    font-size: 18px;
+    color: white;
+    background-color: blue;
+    border-radius: 5px;
+    border-style: none;
+    width: 90%;
+    height: 30px;
+    margin-bottom: 10px;
+}
+#borda{
+    border-top: 3px solid blue;
+    padding-top: 20px;
+}
+
+@media screen and (max-width: 650px){
+    img{
+        max-width: 100%;
+    }
+    header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95%;
+    } 
+    section .container{
+    display: block;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 95%;
+    }
+    .produtos{
+        display: block;
+        align-items: center;
+        justify-content: space-between;
+        max-width: 95%;
+    }
+    section .container{
+        align-items: center;
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 1025px){
+    section .container .produto .nomeProduto{
+        font-weight:bolder;
+        font-size: 22px;
+        margin-bottom: 10px;
+    }
+    section .container .produto .descricaoProduto{
+        font-size: 12px;
+        margin-bottom: 10px;
+        text-align: justify;
+    }
+    section .container .produto button{
+        font-size: 18px;
+        color: white;
+        background-color: blue;
+        border-radius: 5px;
+        border-style: none;
+        width: 90%;
+        height: 30px;
+        margin-bottom: 10px;
+    }
+    section .container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    }
+    section .container{
+    max-width: 990px;
+    width: 100%;
+    margin: 0 auto;
+    }
+
+}
